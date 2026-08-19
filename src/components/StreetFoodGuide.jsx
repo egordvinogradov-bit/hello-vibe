@@ -1,4 +1,5 @@
 import { streetFoodGuide } from '../data/streetFood'
+import PhuketFoodGuide from './PhuketFoodGuide'
 
 function StreetFoodGuide() {
   return (
@@ -17,22 +18,26 @@ function StreetFoodGuide() {
       </header>
 
       {streetFoodGuide.locations.map((place) => (
-        <section className="food-place" id={`food-${place.id}`} key={place.id}>
-          <header className="food-place-header">
-            <h3>{place.name}</h3>
-            <p>{place.intro}</p>
-          </header>
-          <ul className="food-list">
-            {place.recommendations.map((item) => (
-              <li className="food-card" key={item.name}>
-                <h4>{item.name}</h4>
-                <p className="food-location">{item.location}</p>
-                <p>{item.description}</p>
-                <p className="food-try">{item.try}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
+        place.id === 'phuket' ? (
+          <PhuketFoodGuide guide={place} key={place.id} />
+        ) : (
+          <section className="food-place" id={`food-${place.id}`} key={place.id}>
+            <header className="food-place-header">
+              <h3>{place.name}</h3>
+              <p>{place.intro}</p>
+            </header>
+            <ul className="food-list">
+              {place.recommendations.map((item) => (
+                <li className="food-card" key={item.name}>
+                  <h4>{item.name}</h4>
+                  <p className="food-location">{item.location}</p>
+                  <p>{item.description}</p>
+                  <p className="food-try">{item.try}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
       ))}
     </section>
   )

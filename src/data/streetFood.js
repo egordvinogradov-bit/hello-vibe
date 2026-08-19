@@ -77,35 +77,146 @@ export const streetFoodGuide = {
     {
       id: 'phuket',
       name: 'Phuket',
-      intro: 'Peranakan-Chinese town cooking, Hokkien noodles, and markets that still feed the island’s everyday life.',
-      recommendations: [
+      heading: 'Street Food & Local Eats in Phuket',
+      intro:
+        'Explore Phuket through its food, from Old Town institutions and local breakfast spots to seafood by the coast and dishes found almost nowhere else in Thailand.',
+      filters: [
+        'All',
+        'Local Classics',
+        'Breakfast',
+        'Noodles',
+        'Seafood',
+        'Southern Thai',
+        'Michelin',
+      ],
+      places: [
         {
-          name: 'Phuket Old Town Walking Street',
-          location: 'Thalang, Dibuk and Krabi Roads',
+          name: 'One Chun',
+          area: 'Phuket Old Town',
+          address:
+            '48/1 Thep Krasatti Road, Talat Yai, Mueang Phuket, Phuket 83000',
+          category: 'Southern Thai',
           description:
-            'Sino-Portuguese shophouses and a weekend night market that is the easiest introduction to Phuket food.',
-          try: 'Mee hokkien, o-aew (grass jelly), and local coconut ice cream as you walk.',
+            'A character-filled restaurant in a historic Old Town building serving family recipes and classic Phuket and Southern Thai cooking.',
+          try:
+            'Mu Hong — slow-braised pork belly with rich Phuket-style flavors.',
+          priceLevel: '฿฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=One+Chun+Phuket',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Mee Ton Poe',
-          location: 'Phang Nga Road, Phuket Town',
+          name: 'Go Benz',
+          area: 'Phuket Town',
+          address:
+            '163 Krabi Road, Talat Nuea, Mueang Phuket, Phuket 83000',
+          category: 'Local Classics',
           description:
-            'A decades-old Hokkien noodle house and a local landmark for Phuket’s Chinese-Thai cooking.',
-          try: 'Hokkien mee with pork and squid, plus a side of the house dumplings if they have them.',
+            'A hugely popular local institution known for late-night bowls of peppery pork broth and rich rice-noodle dishes.',
+          try:
+            'Rolled rice noodles with pork in peppery broth, or dry rice with crispy pork and pork offal.',
+          priceLevel: '฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Go+Benz+Phuket',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Go Ang',
-          location: 'Phang Nga Road, Phuket Town',
+          name: 'O Tao Bang Niao',
+          area: 'Phuket Town',
+          address:
+            '362 Phuket Road, Talat Yai, Mueang Phuket, Phuket 83000',
+          category: 'Local Classics',
           description:
-            'An old-school breakfast and dim sum room that still fills with families on weekends.',
-          try: 'Steamed buns, pork stew rice, and local coffee to start the day like Phuket Town does.',
+            'A family-run Phuket favorite serving O Tao, a smoky local specialty cooked over charcoal with seafood, egg, and battered taro.',
+          try:
+            'O Tao — one of Phuket’s most distinctive local dishes.',
+          priceLevel: '฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=O+Tao+Bang+Niao+Phuket',
+          designation: 'Michelin Guide',
         },
         {
-          name: 'Banzaan Fresh Market',
-          location: 'Patak Road, near Jungceylon, Patong',
+          name: 'Roti Chaofa',
+          area: 'Phuket Town',
+          address:
+            '44 Chaofa Road, Talat Nuea, Mueang Phuket, Phuket 83000',
+          category: 'Breakfast',
           description:
-            'A modern wet market with a food court upstairs—useful if you are staying on the west coast rather than in town.',
-          try: 'Southern-style curries, grilled seafood, and mango sticky rice from the stall counters.',
+            'A long-running Thai-Muslim breakfast spot where crisp rotis are served alongside curries, biryani, and savory breakfast dishes.',
+          try:
+            'Fresh roti with beef Massaman curry.',
+          priceLevel: '฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Roti+Chaofa+Phuket',
+          designation: 'Bib Gourmand',
+        },
+        {
+          name: 'O Cha Rot',
+          area: 'Phuket Old Town',
+          address:
+            '72/1 Yaowarat Road, Talat Yai, Mueang Phuket, Phuket 83000',
+          category: 'Noodles',
+          description:
+            'A straightforward Old Town noodle shop known for aromatic beef broth, tender beef, and flavorful homemade beef balls.',
+          try:
+            'Beef noodle soup with beef balls.',
+          priceLevel: '฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=O+Cha+Rot+Yaowarat+Phuket',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Loba Bang Niao',
+          area: 'Phuket Town',
+          address:
+            '18/61 Mae Luan Road, Mueang Phuket, Phuket',
+          category: 'Local Classics',
+          description:
+            'A local spot preserving Phuket’s Hokkien-influenced snack culture, best known for loba and a variety of fried small plates.',
+          try:
+            'Mixed loba and Kien with sweet chili and crushed peanut sauce.',
+          priceLevel: '฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Loba+Bang+Niao+Phuket',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Mor Mu Dong',
+          area: 'Chalong',
+          address:
+            '9/4 Mu 3 Soi Pa Lai, Chao Fa Road, Chalong, Mueang Phuket, Phuket 83130',
+          category: 'Southern Thai',
+          description:
+            'Rustic pavilions set beside a mangrove canal provide the setting for bold Southern Thai flavors and very fresh seafood.',
+          try:
+            'Choose several Southern Thai dishes to share and ask about the day’s seafood.',
+          priceLevel: '฿฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Mor+Mu+Dong+Phuket',
+          designation: 'Bib Gourmand',
+        },
+        {
+          name: 'Mook Manee',
+          area: 'Rawai',
+          address:
+            '1120 Wiset Road, Rawai, Mueang Phuket, Phuket 83100',
+          category: 'Seafood',
+          description:
+            'A Rawai seafood restaurant centered on fresh shellfish, fish, crab, prawns, and other coastal favorites.',
+          try:
+            'Fresh seafood and stir-fried clams with chili paste.',
+          priceLevel: '฿฿',
+          openingHours: 'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Mook+Manee+Phuket',
+          designation: 'Michelin Guide',
         },
       ],
     },

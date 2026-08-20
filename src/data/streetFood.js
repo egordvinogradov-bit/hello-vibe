@@ -468,35 +468,160 @@ export const streetFoodGuide = {
     {
       id: 'koh-samui',
       name: 'Koh Samui',
-      intro: 'Night markets, fishing-village seafood, and a few island stalls that stay local even in high season.',
-      recommendations: [
+      heading: 'Street Food & Local Eats in Koh Samui',
+      intro:
+        'Taste Koh Samui through Southern Thai cooking, fresh island seafood, family-run local restaurants, beachfront dining, and lively evening markets.',
+      disclaimer:
+        'Opening hours and MICHELIN recognition can change. Check current information before visiting.',
+      filters: [
+        'All',
+        'Southern Thai',
+        'Seafood',
+        'Local Favorites',
+        'Beachfront',
+        'Markets',
+        'Michelin',
+      ],
+      places: [
         {
-          name: 'Fisherman’s Village Walking Street',
-          location: 'Bophut, Thursday evenings',
+          name: 'Jun Hom',
+          area: 'Bang Por',
+          address:
+            '6/14 Mu 5, Mae Nam, Ko Samui, Surat Thani 84330',
+          category: 'Seafood',
+          tags: ['Southern Thai', 'Beachfront', 'Local Favorites'],
           description:
-            'Samui’s most walkable night market: street stalls, seafood, and a waterfront that is easy to linger on.',
-          try: 'Grilled prawns, som tam, and a coconut pancake (khanom krok) as you wander.',
+            'A relaxed beachfront restaurant serving Southern Thai cooking and fresh local seafood with views across the water.',
+          try:
+            'Ask about the fresh catch of the day and pair it with Southern Thai dishes to share.',
+          priceLevel: '฿฿',
+          openingHours: 'Daily 11:00–20:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Jun+Hom+Koh+Samui',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Lamai Food Center & Night Market',
-          location: 'Lamai Beach Road',
+          name: 'Baan Suan Lung Khai',
+          area: 'Taling Ngam',
+          address:
+            'Koh Samui, Surat Thani',
+          category: 'Southern Thai',
+          tags: ['Local Favorites'],
           description:
-            'A practical, less dressed-up cluster of stalls—good for a casual dinner without crossing the island.',
-          try: 'Pad see ew, satay, and fresh fruit shakes after a beach day.',
+            'A family-style Southern Thai dining experience surrounded by coconut trees, focused on local recipes and ingredients from the island.',
+          try:
+            'Choose the Southern Thai set meal and sample several dishes together rather than ordering a single specialty.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Tue–Sun 11:00–14:00 and 16:30–19:00; Monday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Baan+Suan+Lung+Khai+Koh+Samui',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Hua Thanon',
-          location: 'Muslim fishing village, south of Lamai',
+          name: 'Bang Por Seafood Takho',
+          area: 'Bang Por / Mae Nam',
+          address:
+            '56/4 Mu 6, Mae Nam, Ko Samui, Surat Thani 84330',
+          category: 'Seafood',
+          tags: ['Southern Thai', 'Beachfront', 'Local Favorites'],
           description:
-            'A working village with excellent seafood and a slower, more local feel than Chaweng.',
-          try: 'Grilled fish with seafood sauce, khao yum, and whatever the day’s catch board lists.',
+            'A casual seaside restaurant where fresh seafood and Southern Thai flavors come with an unfussy beachfront atmosphere.',
+          try:
+            'Fresh local seafood, especially fish and shellfish prepared in Southern Thai styles.',
+          priceLevel: '฿฿',
+          openingHours: 'Daily 10:00–22:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Bang+Por+Seafood+Takho+Koh+Samui',
+          designation: 'Michelin Guide',
         },
         {
-          name: 'Khao Kha Moo 57',
-          location: 'Near Tesco Lotus, Nathon / Maenam area (island favourite)',
+          name: 'Phensiri',
+          area: 'Bo Phut',
+          address:
+            '80/30 Mu 3, Bo Phut, Ko Samui, Surat Thani 84320',
+          category: 'Southern Thai',
+          tags: ['Local Favorites'],
           description:
-            'A simple pork-leg rice shop that islanders recommend when they want something hearty and unfussy.',
-          try: 'Khao kha moo with a boiled egg and plenty of pickled greens and chili vinegar.',
+            'A welcoming restaurant specializing in Thai and Southern Thai cooking, with recipes built around bold spices and local ingredients.',
+          try:
+            'Explore the Southern Thai specialties and ask for recommendations based on the day’s ingredients.',
+          priceLevel: '฿฿',
+          openingHours: 'Daily 12:00–23:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Phensiri+Koh+Samui',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Kapi Sator',
+          area: 'Chaweng',
+          address:
+            '25/236 Mu 6, Soi Had Chaweng 5, Bo Phut, Ko Samui, Surat Thani',
+          category: 'Southern Thai',
+          tags: ['Local Favorites'],
+          description:
+            'A Southern Thai restaurant built around the intense flavors of the region, including shrimp paste, herbs, chilies, and local produce.',
+          try:
+            'Southern Thai curries and dishes featuring kapi and sator.',
+          priceLevel: '฿฿',
+          openingHours: 'Daily 10:00–22:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Kapi+Sator+Koh+Samui',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Ko Seng',
+          area: 'Mae Nam',
+          address:
+            'Mae Nam, Ko Samui, Surat Thani',
+          category: 'Seafood',
+          tags: ['Local Favorites', 'Southern Thai'],
+          description:
+            'An old-school local seafood restaurant with decades of history on Koh Samui, focused on uncomplicated seafood and traditional island flavors.',
+          try:
+            'Ask what seafood is freshest that day and choose several dishes to share.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 10:00–21:00 — verify current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Ko+Seng+Restaurant+Koh+Samui',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: "Fisherman's Village Walking Street",
+          area: 'Bo Phut',
+          address:
+            "Fisherman's Village, Bo Phut, Ko Samui, Surat Thani",
+          category: 'Markets',
+          tags: ['Local Favorites'],
+          description:
+            'A popular evening walking-street experience combining local food stalls, snacks, drinks, shopping, and the atmosphere of historic Bo Phut.',
+          try:
+            'Browse before choosing: look for grilled seafood, Thai snacks, curries, fresh fruit, desserts, and busy local stalls.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Main market Friday around 17:00–23:00; smaller market nights may operate during the week — verify current schedule',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Fishermans+Village+Walking+Street+Koh+Samui',
+          designation: null,
+        },
+        {
+          name: 'Lamai Night Market',
+          area: 'Lamai',
+          address:
+            'Lamai, Maret, Ko Samui, Surat Thani',
+          category: 'Markets',
+          tags: ['Local Favorites'],
+          description:
+            'An easygoing evening food stop in Lamai where visitors can sample Thai street food, grilled dishes, fruit, sweets, and casual market snacks.',
+          try:
+            'Walk the market first, then choose local snacks, grilled food, tropical fruit, and Thai desserts.',
+          priceLevel: '฿',
+          openingHours:
+            'Evenings from around 17:00; Sunday is traditionally the main market night — verify current schedule before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Lamai+Night+Market+Koh+Samui',
+          designation: null,
         },
       ],
     },

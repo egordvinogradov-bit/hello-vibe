@@ -1,25 +1,25 @@
 import { useState } from 'react'
 import FoodGuideDisclaimer from './FoodGuideDisclaimer'
 
-function PhuketFoodGuide({ guide }) {
+function BangkokFoodGuide({ guide }) {
   const [activeFilter, setActiveFilter] = useState('All')
   const visiblePlaces = guide.places.filter((place) => {
     if (activeFilter === 'All') return true
     if (activeFilter === 'Michelin') {
       return place.designation === 'Bib Gourmand' || place.designation === 'Michelin Guide'
     }
-    return place.category === activeFilter
+    return place.category === activeFilter || place.tags.includes(activeFilter)
   })
 
   return (
-    <section className="food-place phuket-food-guide" id="food-phuket">
+    <section className="food-place phuket-food-guide" id="food-bangkok">
       <header className="food-place-header phuket-food-header">
-        <p className="experiences-kicker">Phuket food guide</p>
+        <p className="experiences-kicker">Bangkok food guide</p>
         <h3>{guide.heading}</h3>
         <p>{guide.intro}</p>
       </header>
 
-      <div className="phuket-food-filters" role="group" aria-label="Filter Phuket food places">
+      <div className="phuket-food-filters" role="group" aria-label="Filter Bangkok food places">
         {guide.filters.map((filter) => (
           <button
             className={`phuket-food-filter${activeFilter === filter ? ' is-active' : ''}`}
@@ -89,4 +89,4 @@ function PhuketFoodGuide({ guide }) {
   )
 }
 
-export default PhuketFoodGuide
+export default BangkokFoodGuide

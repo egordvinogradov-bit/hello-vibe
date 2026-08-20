@@ -1133,6 +1133,17 @@
   background: var(--bg-elevated);
 }
 
+.food-guide-disclaimer {
+  max-width: 40rem;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 @media (max-width: 1024px) {
   .food-list {
     grid-template-columns: 1fr;
@@ -1151,6 +1162,10 @@
 
   .food-card {
     padding: 22px;
+  }
+
+  .food-guide-disclaimer {
+    margin-top: 24px;
   }
 
   .phuket-food-filters {

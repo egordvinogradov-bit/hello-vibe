@@ -1,4 +1,5 @@
 import { streetFoodGuide } from '../data/streetFood'
+import BangkokFoodGuide from './BangkokFoodGuide'
 import ChiangMaiFoodGuide from './ChiangMaiFoodGuide'
 import PhuketFoodGuide from './PhuketFoodGuide'
 
@@ -19,7 +20,9 @@ function StreetFoodGuide() {
       </header>
 
       {streetFoodGuide.locations.map((place) => (
-        place.id === 'chiang-mai' ? (
+        place.id === 'bangkok' ? (
+          <BangkokFoodGuide guide={place} key={place.id} />
+        ) : place.id === 'chiang-mai' ? (
           <ChiangMaiFoodGuide guide={place} key={place.id} />
         ) : place.id === 'phuket' ? (
           <PhuketFoodGuide guide={place} key={place.id} />

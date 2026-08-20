@@ -7,35 +7,161 @@ export const streetFoodGuide = {
     {
       id: 'bangkok',
       name: 'Bangkok',
-      intro: 'Night markets, Chinatown alleys, and a few stalls that have earned their reputation.',
-      recommendations: [
+      heading: 'Street Food & Local Eats in Bangkok',
+      intro:
+        'Explore Bangkok through noodle shops, Thai-Chinese classics, seafood, historic markets, and the after-dark energy of Chinatown.',
+      disclaimer:
+        'Opening hours and MICHELIN recognition can change. Check current information before visiting.',
+      filters: [
+        'All',
+        'Noodles',
+        'Thai Classics',
+        'Chinatown',
+        'Seafood',
+        'Markets',
+        'Late Night',
+        'Michelin',
+      ],
+      places: [
         {
-          name: 'Yaowarat (Chinatown)',
-          location: 'Yaowarat Road, Samphanthawong',
+          name: 'Lim Lao Ngow',
+          area: 'Chinatown / Samphanthawong',
+          address:
+            '299-301 Song Sawat Road, Samphanthawong, Bangkok 10100',
+          category: 'Noodles',
+          tags: ['Chinatown', 'Late Night'],
           description:
-            'Bangkok’s most famous night-eating street: packed, bright, and built for grazing rather than a single sit-down meal.',
-          try: 'Try hoy tod (oyster omelette), roasted duck, and fishball noodles after dark.',
+            'The original Chinatown branch of a long-running family noodle shop, best known for springy fish balls made without flour.',
+          try:
+            'Egg noodles with fish balls and wontons.',
+          priceLevel: '฿',
+          openingHours: 'Daily 16:30–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Lim+Lao+Ngow+299+Song+Sawat+Road+Bangkok',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Thip Samai',
-          location: 'Maha Chai Road, Phra Nakhon',
+          name: 'Rung Rueang Tung Pork Noodle',
+          area: 'Phrom Phong / Sukhumvit 26',
+          address:
+            '21/2 Soi Sukhumvit 26, Khlong Tan, Khlong Toei, Bangkok 10110',
+          category: 'Noodles',
+          tags: ['Thai Classics'],
           description:
-            'A long-running Pad Thai shop in the old city, still the reference point for many visitors.',
-          try: 'Order Pad Thai with fresh prawns, or the wrapped egg version if you want the house classic.',
+            'A compact local noodle shop serving clear pork soup and punchy tom yum broth with minced pork, homemade fish balls, and optional crispy fish skin.',
+          try:
+            'Tom yum pork noodles with minced pork balls and crispy fish skin.',
+          priceLevel: '฿',
+          openingHours: 'Daily 08:00–17:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Rung+Rueang+Tung+Pork+Noodle+Bangkok',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Or Tor Kor Market',
-          location: 'Kamphaeng Phet Road, beside Chatuchak',
+          name: 'Here Hai',
+          area: 'Ekkamai',
+          address:
+            '112/1 Soi Sukhumvit 63, Khlong Tan Nuea, Vadhana, Bangkok 10110',
+          category: 'Seafood',
+          tags: ['Thai Classics'],
           description:
-            'One of the city’s cleanest, most carefully stocked food markets—fruit, curries, and northern snacks under one roof.',
-          try: 'Go for som tam, coconut ice cream, and a box of still-warm Thai desserts to take away.',
+            'A busy seafood specialist known for generous portions, fresh seafood from Surat Thani, and bold wok-fired Thai flavors.',
+          try:
+            'Crab meat fried rice.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Tue–Sun 10:00–14:30 and 16:00–17:30; Monday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Here+Hai+Ekkamai+Bangkok',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'Wang Lang Market',
-          location: 'Taksin Road, Bangkok Noi (Thonburi)',
+          name: 'Tang Sui Heng',
+          area: 'Banthat Thong',
+          address:
+            '649 Banthat Thong Road, Wang Mai, Pathum Wan, Bangkok 10330',
+          category: 'Thai Classics',
+          tags: ['Late Night'],
           description:
-            'A tight local market across the river from the Grand Palace, with less spectacle and more everyday eating.',
-          try: 'Look for boat noodles, grilled pork skewers, and whatever the longest queue is for.',
+            'A family-run Bangkok institution serving Thai-Chinese comfort food for more than half a century.',
+          try:
+            'Claypot stewed duck with intestines, blood jelly, and duck feet.',
+          priceLevel: '฿',
+          openingHours: 'Daily 10:30–19:30',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Tang+Sui+Heng+649+Banthat+Thong+Bangkok',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Nai Ek Roll Noodles',
+          area: 'Yaowarat / Chinatown',
+          address:
+            'Yaowarat Road, Samphanthawong, Bangkok',
+          category: 'Chinatown',
+          tags: ['Noodles', 'Late Night'],
+          description:
+            'A famous Chinatown shop built around guay jub: rolled rice noodles in a strongly peppered broth with crispy pork and pork offal.',
+          try:
+            'Guay jub with crispy pork.',
+          priceLevel: '฿',
+          openingHours:
+            'Reported around 08:00–00:00; verify current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Nai+Ek+Roll+Noodles+Yaowarat+Bangkok',
+          designation: null,
+        },
+        {
+          name: 'Polo Fried Chicken',
+          area: 'Lumphini',
+          address:
+            '137/1-3 Sanam Khli Alley (Soi Polo), Lumphini, Pathum Wan, Bangkok 10330',
+          category: 'Thai Classics',
+          tags: [],
+          description:
+            'A long-running Bangkok favorite serving crisp fried chicken piled with fragrant fried garlic alongside classic Isan dishes.',
+          try:
+            'Fried chicken with crispy garlic, som tam, and larb.',
+          priceLevel: '฿',
+          openingHours: 'Daily 07:00–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Polo+Fried+Chicken+Bangkok',
+          designation: null,
+        },
+        {
+          name: 'Yaowarat Road',
+          area: 'Chinatown',
+          address:
+            'Yaowarat Road, Samphanthawong, Bangkok',
+          category: 'Chinatown',
+          tags: ['Markets', 'Late Night', 'Seafood'],
+          description:
+            'Bangkok’s Chinatown becomes one of the city’s great food experiences after dark, when street stalls fill Yaowarat and the surrounding lanes.',
+          try:
+            'Guay jub, grilled seafood, Chinese-Thai noodles, desserts, and whatever looks busiest with locals.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Best visited in the evening and at night; individual vendor hours vary',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Yaowarat+Road+Bangkok',
+          designation: null,
+        },
+        {
+          name: 'Nang Loeng Market',
+          area: 'Pom Prap Sattru Phai',
+          address:
+            'Nang Loeng, Pom Prap Sattru Phai, Bangkok',
+          category: 'Markets',
+          tags: ['Thai Classics'],
+          description:
+            'One of Bangkok’s older neighborhood markets, combining everyday local commerce with traditional prepared foods and Thai snacks.',
+          try:
+            'Explore the prepared-food stalls for noodles, dumplings, sweets, and classic Bangkok market dishes.',
+          priceLevel: '฿',
+          openingHours:
+            'Hours vary by vendor — verify current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Nang+Loeng+Market+Bangkok',
+          designation: null,
         },
       ],
     },

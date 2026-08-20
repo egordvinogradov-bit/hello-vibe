@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FoodGuideDisclaimer from './FoodGuideDisclaimer'
 
 function ChiangMaiFoodGuide({ guide }) {
   const [activeFilter, setActiveFilter] = useState('All')
@@ -83,6 +84,7 @@ function ChiangMaiFoodGuide({ guide }) {
       ) : (
         <p className="phuket-food-empty">No places are listed in this category.</p>
       )}
+      <FoodGuideDisclaimer />
     </section>
   )
 }

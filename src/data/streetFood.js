@@ -42,35 +42,154 @@ export const streetFoodGuide = {
     {
       id: 'chiang-mai',
       name: 'Chiang Mai',
-      intro: 'Northern curries, grilled chicken, and night streets that are as much culture as dinner.',
-      recommendations: [
-        {
-          name: 'Sunday Walking Street',
-          location: 'Ratchadamnoen Road, inside the old city',
-          description:
-            'The weekly night market that turns the old moat streets into a slow crawl of northern snacks and crafts.',
-          try: 'Sai ua (herb sausage), khao soi cups, and roti with banana if you want something sweet.',
-        },
-        {
-          name: 'Warorot Market (Kad Luang)',
-          location: 'Wichayanon Road, by the Ping River',
-          description:
-            'Chiang Mai’s working market: spices, fruit, and cheap, excellent food from early morning.',
-          try: 'Nam prik noom with sticky rice, fresh coconut, and a bag of crispy pork crackling.',
-        },
+      heading: 'Street Food & Northern Thai Eats in Chiang Mai',
+      intro:
+        'Taste Chiang Mai through khao soi, fiery northern dips, laab, market snacks, and family-run restaurants rooted in Lanna food culture.',
+      filters: [
+        'All',
+        'Khao Soi',
+        'Northern Thai',
+        'Street Food',
+        'Markets',
+        'Breakfast',
+        'Michelin',
+      ],
+      places: [
         {
           name: 'Khao Soi Mae Sai',
-          location: 'Faham Road, near Nakorn Ping Bridge',
+          area: 'Chang Phueak',
+          address:
+            '29/1 Ratchaphruek Road, Chang Phueak, Mueang Chiang Mai, Chiang Mai 50300',
+          category: 'Khao Soi',
           description:
-            'A no-frills bowl shop dedicated to Chiang Mai’s signature curry noodles.',
-          try: 'Khao soi with chicken, extra pickled mustard greens, and a squeeze of lime.',
+            'A beloved local shop focused on rich, slightly spicy khao soi with a choice of meat toppings.',
+          try:
+            'Khao soi, with chicken or another available meat topping.',
+          priceLevel: '฿',
+          openingHours:
+            'Mon–Sat 08:00–16:00; Sunday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Khao+Soi+Mae+Sai+Chiang+Mai',
+          designation: 'Bib Gourmand',
         },
         {
-          name: 'SP Chicken',
-          location: 'Moon Muang Soi 2, old city',
+          name: 'Huen Muan Jai',
+          area: 'Chang Phueak',
+          address:
+            '24 Ratchaphruek Road, Chang Phueak, Mueang Chiang Mai, Chiang Mai 50300',
+          category: 'Northern Thai',
           description:
-            'A small grilled-chicken stall that locals still rate above most tourist restaurants nearby.',
-          try: 'Gai yang with sticky rice and nam jim jaew—simple, smoky, and worth the wait.',
+            'A Lanna-style restaurant serving a broad range of traditional Northern Thai dishes in a relaxed garden setting.',
+          try:
+            'Northern Thai dips, herby soups, and seasonal local dishes.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Mon–Tue, Thu–Sun 11:00–15:00 and 17:00–21:00; Wednesday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Huen+Muan+Jai+Chiang+Mai',
+          designation: 'Bib Gourmand',
+        },
+        {
+          name: 'Lung Khajohn Wat Ket',
+          area: 'Wat Ket',
+          address:
+            '109 Charoen Rajd Road, Chang Moi, Mueang Chiang Mai, Chiang Mai 50000',
+          category: 'Street Food',
+          description:
+            'A humble local favorite opposite Wat Ket Karam, known for delicate steamed rice-skin dumplings and tapioca snacks.',
+          try:
+            'Khao kriap pak mo and tapioca dumplings filled with pork and peanuts.',
+          priceLevel: '฿',
+          openingHours:
+            'Mon–Sat 06:00–15:00; Sunday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Lung+Khajohn+Wat+Ket+Chiang+Mai',
+          designation: 'Bib Gourmand',
+        },
+        {
+          name: 'Krua Lawng Khao',
+          area: 'Mae Rim',
+          address:
+            '18 Mu 2, Soi Sukhaphiban Mae Rim, Ban Duang Di 1, Rim Tai, Mae Rim, Chiang Mai 50180',
+          category: 'Northern Thai',
+          description:
+            'A relaxed wooden pavilion overlooking rice fields, serving fresh and affordable Northern Thai cooking.',
+          try:
+            'Northern Thai spicy pork salad and hot-and-spicy fish soup with morning glory.',
+          priceLevel: '฿',
+          openingHours:
+            'Tue–Sun 11:00–19:00; Monday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Krua+Lawng+Khao+Chiang+Mai',
+          designation: 'Bib Gourmand',
+        },
+        {
+          name: 'Lumdee Te Khuadang',
+          area: 'San Sai',
+          address:
+            'V Community, 345/9 Mu 3, Wongwaen Rop 2 Road, San Phra Net, San Sai, Chiang Mai 50210',
+          category: 'Northern Thai',
+          description:
+            'A spacious local restaurant specializing in home-style Northern Thai dishes served hot and made to order.',
+          try:
+            'Saep pork rib, nam phrik num, and seasonal Northern Thai dishes.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 10:30–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Lumdee+Te+Khuadang+Chiang+Mai',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Withee Laab',
+          area: 'Wat Ket',
+          address:
+            '94-120 Charoen Muang Road, Wat Ket, Mueang Chiang Mai, Chiang Mai 50000',
+          category: 'Northern Thai',
+          description:
+            'A small wooden restaurant known for bold Northern-style laab and affordable local cooking.',
+          try:
+            'Spicy minced buffalo laab or cooked minced pork laab.',
+          priceLevel: '฿',
+          openingHours:
+            'Check current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Withee+Laab+Chiang+Mai',
+          designation: 'Michelin Guide',
+        },
+        {
+          name: 'Jing Jai Weekend Market',
+          area: 'Chang Phueak',
+          address:
+            'Jing Jai Central, Atsadathorn Road, Chiang Mai',
+          category: 'Markets',
+          description:
+            'A relaxed weekend market combining local food, seasonal produce, crafts, cafés, and Chiang Mai creative culture.',
+          try:
+            'Local produce, northern snacks, homemade food, and seasonal specialties.',
+          priceLevel: '฿',
+          openingHours:
+            'Saturday and Sunday mornings',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Jing+Jai+Market+Chiang+Mai',
+          designation: null,
+        },
+        {
+          name: 'Tha Phae Sunday Walking Street',
+          area: 'Old City',
+          address:
+            'Ratchadamnoen Road, Chiang Mai Old City',
+          category: 'Markets',
+          description:
+            'Chiang Mai’s famous Sunday walking street, filled with market stalls, snacks, desserts, and local specialties.',
+          try:
+            'Khai pam, northern snacks, fruit drinks, sweets, and market-style street food.',
+          priceLevel: '฿',
+          openingHours:
+            'Sunday from around 17:00 onward',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Tha+Phae+Sunday+Walking+Street+Chiang+Mai',
+          designation: null,
         },
       ],
     },

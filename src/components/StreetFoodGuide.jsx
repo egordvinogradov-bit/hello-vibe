@@ -1,4 +1,5 @@
 import { streetFoodGuide } from '../data/streetFood'
+import ChiangMaiFoodGuide from './ChiangMaiFoodGuide'
 import PhuketFoodGuide from './PhuketFoodGuide'
 
 function StreetFoodGuide() {
@@ -18,7 +19,9 @@ function StreetFoodGuide() {
       </header>
 
       {streetFoodGuide.locations.map((place) => (
-        place.id === 'phuket' ? (
+        place.id === 'chiang-mai' ? (
+          <ChiangMaiFoodGuide guide={place} key={place.id} />
+        ) : place.id === 'phuket' ? (
           <PhuketFoodGuide guide={place} key={place.id} />
         ) : (
           <section className="food-place" id={`food-${place.id}`} key={place.id}>

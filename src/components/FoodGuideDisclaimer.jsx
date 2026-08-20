@@ -1,7 +1,7 @@
-function FoodGuideDisclaimer() {
+function FoodGuideDisclaimer({ children = 'Opening hours and MICHELIN recognition can change. Check current information before visiting.' }) {
   return (
     <p className="food-guide-disclaimer">
-      Opening hours and MICHELIN recognition can change. Check current information before visiting.
+      {children}
     </p>
   )
 }

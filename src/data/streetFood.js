@@ -2,7 +2,7 @@ export const streetFoodGuide = {
   kicker: 'A tasting map',
   heading: 'Where to eat, city by city.',
   intro:
-    'Four places, four palates. Use this as a starting list—add, swap, or skip stops as you go.',
+    'Five places, five palates. Use this as a starting list—add, swap, or skip stops as you go.',
   locations: [
     {
       id: 'bangkok',
@@ -462,6 +462,171 @@ export const streetFoodGuide = {
           mapUrl:
             'https://www.google.com/maps/search/?api=1&query=Mook+Manee+Phuket',
           designation: 'Michelin Guide',
+        },
+      ],
+    },
+    {
+      id: 'krabi',
+      name: 'Krabi',
+      heading: 'Street Food & Local Eats in Krabi',
+      intro:
+        'Discover Krabi through Southern Thai cooking, fresh seafood, local breakfast spots, traditional markets, and lively evening food stalls from Krabi Town to Ao Nang.',
+      disclaimer:
+        'Opening hours and schedules can change. Check current information before visiting.',
+      filters: [
+        'All',
+        'Southern Thai',
+        'Seafood',
+        'Local Favorites',
+        'Markets',
+        'Breakfast',
+        'Krabi Town',
+        'Ao Nang',
+      ],
+      places: [
+        {
+          name: 'Nong Joke',
+          area: 'Sai Thai / Krabi Town',
+          address:
+            '50/3 Mu 7, Sai Thai, Mueang Krabi, Krabi 81000',
+          category: 'Southern Thai',
+          tags: ['Seafood', 'Local Favorites', 'Krabi Town'],
+          description:
+            'A long-running local restaurant focused on bold Southern Thai cooking, seafood, curries, and dishes built around regional ingredients.',
+          try:
+            'Gaeng som, bai liang with egg, Southern-style curries, and fresh fish.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 11:00–14:00 and 16:00–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Nong+Joke+Restaurant+Krabi',
+          designation: null,
+        },
+        {
+          name: 'Ruen Mai',
+          area: 'Sai Thai',
+          address:
+            '117 Mu 3, Sai Thai, Mueang Krabi, Krabi',
+          category: 'Southern Thai',
+          tags: ['Local Favorites', 'Krabi Town'],
+          description:
+            'A garden-style restaurant specializing in traditional Southern Thai recipes and regional ingredients in a relaxed natural setting.',
+          try:
+            'Turmeric-fried fish, Southern-style shrimp chili dip, and regional curries.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 10:30–15:00 and 17:00–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Ruen+Mai+Restaurant+Krabi',
+          designation: null,
+        },
+        {
+          name: 'Krua Thara',
+          area: 'Nopparat Thara / Ao Nang',
+          address:
+            '82 Mu 5, Nopparat Thara Road, Ao Nang, Mueang Krabi, Krabi',
+          category: 'Seafood',
+          tags: ['Local Favorites', 'Ao Nang'],
+          description:
+            'A long-established seafood restaurant near Nopparat Thara known for fresh fish, shellfish, crab, and Thai seafood dishes.',
+          try:
+            'Choose from the fresh seafood selection and order several Thai-style preparations to share.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Current hours vary by source — verify before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Krua+Thara+Krabi',
+          designation: null,
+        },
+        {
+          name: 'KoDam Kitchen',
+          area: 'Ao Nang',
+          address:
+            '155/7 Khlong Hang Road, Ao Nang, Mueang Krabi, Krabi',
+          category: 'Southern Thai',
+          tags: ['Seafood', 'Local Favorites', 'Ao Nang'],
+          description:
+            'A popular Ao Nang restaurant serving Thai dishes and seafood with an emphasis on fresh ingredients and approachable local flavors.',
+          try:
+            'Pad Thai with prawns, seafood with chili paste, Massaman chicken with roti, or garlic snapper.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 11:00–22:30',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=KoDam+Kitchen+Ao+Nang+Krabi',
+          designation: null,
+        },
+        {
+          name: "May & Mark's House",
+          area: 'Krabi Town',
+          address:
+            '34 Maharaj Road Soi 10, Pak Nam, Mueang Krabi, Krabi',
+          category: 'Breakfast',
+          tags: ['Krabi Town', 'Local Favorites'],
+          description:
+            'A casual Krabi Town café and restaurant that works particularly well for an early breakfast or relaxed meal before exploring town.',
+          try:
+            'Breakfast dishes, coffee, and the daily Thai and café-style options.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Daily 07:00–21:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=May+and+Marks+House+Krabi',
+          designation: null,
+        },
+        {
+          name: 'Krabi Town Walking Street',
+          area: 'Krabi Town',
+          address:
+            'Krabi Town, Pak Nam, Mueang Krabi, Krabi',
+          category: 'Markets',
+          tags: ['Krabi Town', 'Local Favorites'],
+          description:
+            'A weekend evening market bringing together Thai street food, local snacks, desserts, drinks, crafts, and live entertainment in central Krabi Town.',
+          try:
+            'Walk through the market first, then look for grilled seafood, Southern Thai snacks, desserts, fruit, and busy local stalls.',
+          priceLevel: '฿',
+          openingHours:
+            'Weekend evenings — verify the current schedule before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Krabi+Town+Walking+Street',
+          designation: null,
+        },
+        {
+          name: 'Maharaj Market',
+          area: 'Krabi Town',
+          address:
+            'Maharaj Road, Pak Nam, Mueang Krabi, Krabi',
+          category: 'Markets',
+          tags: ['Breakfast', 'Krabi Town', 'Local Favorites'],
+          description:
+            'A traditional fresh market best experienced early in the morning, when local shoppers arrive for produce, seafood, ingredients, and prepared breakfast foods.',
+          try:
+            'Explore the prepared-food stalls for Southern Thai breakfast dishes, snacks, fruit, and local ingredients.',
+          priceLevel: '฿',
+          openingHours:
+            'Daily approximately 04:00–12:00; best visited early in the morning',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Maharaj+Market+Krabi',
+          designation: null,
+        },
+        {
+          name: 'Ao Nang Landmark Night Market',
+          area: 'Ao Nang',
+          address:
+            'Ao Nang, Mueang Krabi, Krabi',
+          category: 'Markets',
+          tags: ['Ao Nang', 'Seafood'],
+          description:
+            'A lively evening market near the Ao Nang beachfront area with a broad mix of Thai street food, seafood, grilled dishes, desserts, drinks, and casual entertainment.',
+          try:
+            'Browse before ordering and look for grilled seafood, skewers, Thai dishes, fresh fruit, pancakes, and desserts.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Daily around 17:00–23:00 — verify current hours before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Ao+Nang+Landmark+Night+Market+Krabi',
+          designation: null,
         },
       ],
     },

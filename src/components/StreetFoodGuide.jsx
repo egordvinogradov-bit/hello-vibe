@@ -1,6 +1,7 @@
 import { streetFoodGuide } from '../data/streetFood'
 import BangkokFoodGuide from './BangkokFoodGuide'
 import ChiangMaiFoodGuide from './ChiangMaiFoodGuide'
+import KohPhanganFoodGuide from './KohPhanganFoodGuide'
 import KohSamuiFoodGuide from './KohSamuiFoodGuide'
 import KrabiFoodGuide from './KrabiFoodGuide'
 import PhuketFoodGuide from './PhuketFoodGuide'
@@ -30,6 +31,8 @@ function StreetFoodGuide() {
           <PhuketFoodGuide guide={place} key={place.id} />
         ) : place.id === 'krabi' ? (
           <KrabiFoodGuide guide={place} key={place.id} />
+        ) : place.id === 'koh-phangan' ? (
+          <KohPhanganFoodGuide guide={place} key={place.id} />
         ) : place.id === 'koh-samui' ? (
           <KohSamuiFoodGuide guide={place} key={place.id} />
         ) : (

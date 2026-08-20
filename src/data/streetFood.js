@@ -2,7 +2,7 @@ export const streetFoodGuide = {
   kicker: 'A tasting map',
   heading: 'Where to eat, city by city.',
   intro:
-    'Five places, five palates. Use this as a starting list—add, swap, or skip stops as you go.',
+    'Six places, six palates. Use this as a starting list—add, swap, or skip stops as you go.',
   locations: [
     {
       id: 'bangkok',
@@ -626,6 +626,170 @@ export const streetFoodGuide = {
             'Daily around 17:00–23:00 — verify current hours before visiting',
           mapUrl:
             'https://www.google.com/maps/search/?api=1&query=Ao+Nang+Landmark+Night+Market+Krabi',
+          designation: null,
+        },
+      ],
+    },
+    {
+      id: 'koh-phangan',
+      name: 'Koh Phangan',
+      heading: 'Street Food & Local Eats in Koh Phangan',
+      intro:
+        'Discover Koh Phangan beyond the beach parties through home-style Thai cooking, fresh island seafood, Southern flavors, fishing-village restaurants, and lively local markets.',
+      disclaimer:
+        'Opening hours and schedules can change. Check current information before visiting.',
+      filters: [
+        'All',
+        'Thai Classics',
+        'Southern Thai',
+        'Seafood',
+        'Local Favorites',
+        'Markets',
+        'Beachfront',
+      ],
+      places: [
+        {
+          name: 'Mama KOP',
+          area: 'Hin Kong',
+          address:
+            '19 Hin Kong Road, Ko Pha-ngan, Surat Thani',
+          category: 'Thai Classics',
+          tags: ['Seafood', 'Local Favorites', 'Beachfront'],
+          description:
+            'A relaxed beachfront local restaurant in Hin Kong serving home-style Thai dishes and seafood with sunset views over the water.',
+          try:
+            'Choose several Thai dishes to share, ask about the available seafood, and time your visit for sunset.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Current hours vary by source — verify before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Mama+KOP+Hin+Kong+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: "Fisherman's Restaurant & Bar",
+          area: 'Ban Tai',
+          address:
+            '61/2 Soi Rak Sawat, Ban Tai, Ko Pha-ngan, Surat Thani 84280',
+          category: 'Seafood',
+          tags: ['Local Favorites'],
+          description:
+            'An established island seafood restaurant focused on fresh fish, shellfish, and Thai seafood dishes in a relaxed setting.',
+          try:
+            'Ask about the fresh catch and choose several seafood dishes to share.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Daily 13:00–22:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Fishermans+Restaurant+Bar+Ban+Tai+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: 'No Name Kitchen Phangan',
+          area: 'Thong Sala',
+          address:
+            '99/105 area, Ko Pha-ngan, Surat Thani',
+          category: 'Thai Classics',
+          tags: ['Local Favorites'],
+          description:
+            'A small owner-run kitchen serving straightforward home-style Thai cooking away from the island’s more tourist-focused dining scene.',
+          try:
+            'Ask for the house recommendations and explore classic Thai dishes prepared to order.',
+          priceLevel: '฿',
+          openingHours:
+            'Tue–Sat 14:00–23:30; Sunday and Monday closed',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=No+Name+Kitchen+Phangan',
+          designation: null,
+        },
+        {
+          name: 'Restaurant Sunshine',
+          area: 'Sri Thanu',
+          address:
+            '26/14 Moo 8, Sri Thanu, Ko Pha-ngan, Surat Thani',
+          category: 'Southern Thai',
+          tags: ['Thai Classics', 'Local Favorites'],
+          description:
+            'A local Thai restaurant associated with traditional and Southern Thai flavors in the Sri Thanu area.',
+          try:
+            'Look for Southern Thai specialties and ask which dishes are available that day.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Current operating status and hours should be verified before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Restaurant+Sunshine+Sri+Thanu+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: "Muai's Thai Traditional Cooking Academy & Restaurant",
+          area: 'Thong Sala',
+          address:
+            '177/7 Moo 1, Thong Sala, Ko Pha-ngan, Surat Thani 84280',
+          category: 'Thai Classics',
+          tags: ['Local Favorites'],
+          description:
+            'A Thai cooking academy and restaurant offering travelers a more hands-on introduction to traditional Thai ingredients, dishes, and cooking techniques.',
+          try:
+            'Book a cooking session to prepare several Thai dishes rather than treating it only as a conventional restaurant stop.',
+          priceLevel: '฿฿',
+          openingHours:
+            'Classes and restaurant hours vary — contact ahead before visiting',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Muais+Thai+Traditional+Cooking+Academy+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: 'Phantip Night Food Market',
+          area: 'Thong Sala',
+          address:
+            'Thong Sala, Ko Pha-ngan, Surat Thani',
+          category: 'Markets',
+          tags: ['Thai Classics', 'Southern Thai', 'Local Favorites'],
+          description:
+            'One of Koh Phangan’s essential evening food stops, bringing together Thai curries, grilled food, seafood, snacks, sweets, fruit, and inexpensive local meals.',
+          try:
+            'Southern-style curries, grilled seafood, som tam, roti, Thai desserts, and whatever stalls are busiest.',
+          priceLevel: '฿',
+          openingHours:
+            'Daily evening market; stalls generally set up around 16:00–17:00 and run until roughly 22:00 — verify current hours',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Phantip+Night+Food+Market+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: 'Thong Sala Saturday Walking Street',
+          area: 'Thong Sala',
+          address:
+            'Chinese Street, Thong Sala, Ko Pha-ngan, Surat Thani',
+          category: 'Markets',
+          tags: ['Thai Classics', 'Local Favorites'],
+          description:
+            'A weekly walking street where central Thong Sala fills with food vendors, snacks, local products, crafts, and evening crowds.',
+          try:
+            'Walk the full street before choosing from grilled food, Thai snacks, desserts, drinks, and local specialties.',
+          priceLevel: '฿',
+          openingHours:
+            'Saturday 16:00–22:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Thong+Sala+Saturday+Walking+Street+Koh+Phangan',
+          designation: null,
+        },
+        {
+          name: 'Phorn Restaurant',
+          area: 'Chaloklum',
+          address:
+            '28/4 Moo 7, Chaloklum Pier, Ko Pha-ngan, Surat Thani',
+          category: 'Seafood',
+          tags: ['Thai Classics', 'Local Favorites'],
+          description:
+            'A casual seafood restaurant by Chaloklum Pier in the island’s traditional fishing village, with easy access to fresh local seafood.',
+          try:
+            'Fresh fish, prawns, calamari, and Thai seafood dishes based on what is available that day.',
+          priceLevel: '฿–฿฿',
+          openingHours:
+            'Daily 09:00–22:00',
+          mapUrl:
+            'https://www.google.com/maps/search/?api=1&query=Phorn+Restaurant+Chaloklum+Koh+Phangan',
           designation: null,
         },
       ],
